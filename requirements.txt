@@ -1,0 +1,14 @@
+Django
+gunicorn
+psycopg2-binary
+dj-database-url
+whitenoise
+fasttext-wheel
+google-api-python-client
+google-auth-httplib2
+googletrans==3.0.0
+joblib
+nltk
+numpy
+pandas
+requests

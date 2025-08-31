@@ -1,0 +1,22 @@
+{
+  "builds": [
+    {
+      "src": "CommentAnalyzer/wsgi.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "build.sh",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/staticfiles/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "CommentAnalyzer/wsgi.py"
+    }
+  ]
+}
