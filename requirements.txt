@@ -4,6 +4,7 @@ psycopg2-binary
 dj-database-url
 whitenoise
 fasttext-wheel
+django-cors-headers # Added the missing package
 google-api-python-client
 google-auth-httplib2
 googletrans==3.0.0
